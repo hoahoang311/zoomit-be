@@ -1,0 +1,10 @@
+{
+    "Parameters": {
+        "DBUser": "postgres",
+        "DBPassword": "postgres",
+        "DBName": "zoomitdb",
+        "DBPort": 5432,
+        "DBHost": "http://localhost:3000",
+        "Stage": "dev"
+    }
+}
