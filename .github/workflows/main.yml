@@ -31,10 +31,7 @@ jobs:
 
       - name: Deploy SAM application
         run: |
-          sam deploy --no-confirm-changeset --no-fail-on-empty-changeset \
-            --stack-name my-sam-stack \
-            --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND \
-            --region ca-central-1  # Specify your AWS region
+          sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
 
       - name: Notify of deployment success
         if: success()
