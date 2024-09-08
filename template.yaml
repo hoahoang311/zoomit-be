@@ -66,8 +66,3 @@ Resources:
         Stage: !Ref Stage
         JwtRefreshSecret: !Ref JwtRefreshSecret
         JwtAccessSecret: !Ref JwtAccessSecret
-
-Outputs:
-  ZoomitApi:
-    Description: 'API Gateway endpoint URL for Prod stage for Hello World function'
-    Value: !Sub 'https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/${Stage}/'
