@@ -62,8 +62,6 @@ Resources:
                     Properties:
                         Path: /auth/login
                         Method: post
-                        RestApiId:
-                            Ref: 9lvt6cq0dd
         Metadata:
             BuildMethod: esbuild
             BuildProperties:
@@ -86,8 +84,6 @@ Resources:
                     Properties:
                         Path: /auth/signup
                         Method: post
-                        RestApiId:
-                            Ref: 9lvt6cq0dd
         Metadata:
             BuildMethod: esbuild
             BuildProperties:
@@ -110,8 +106,6 @@ Resources:
                     Properties:
                         Path: /auth/refresh-token
                         Method: post
-                        RestApiId:
-                            Ref: 9lvt6cq0dd
         Metadata:
             BuildMethod: esbuild
             BuildProperties:
@@ -134,8 +128,6 @@ Resources:
                     Properties:
                         Path: /auth/nickname
                         Method: post
-                        RestApiId:
-                            Ref: 9lvt6cq0dd
         Metadata:
             BuildMethod: esbuild
             BuildProperties:
