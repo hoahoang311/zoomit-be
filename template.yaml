@@ -80,19 +80,6 @@ Resources:
         JwtRefreshSecret: !Ref JwtRefreshSecret
         JwtAccessSecret: !Ref JwtAccessSecret
 
-  ApplicationResourceGroup:
-    Type: AWS::ResourceGroups::Group
-    Properties:
-      Name:
-        Fn::Sub: ApplicationInsights-SAM-${AWS::StackName}
-      ResourceQuery:
-        Type: CLOUDFORMATION_STACK_1_0
-  ApplicationInsightsMonitoring:
-    Type: AWS::ApplicationInsights::Application
-    Properties:
-      ResourceGroupName:
-        Ref: ApplicationResourceGroup
-      AutoConfigurationEnabled: 'true'
 Outputs:
   ZoomitApi:
     Description: 'API Gateway endpoint URL for Prod stage for Hello World function'
