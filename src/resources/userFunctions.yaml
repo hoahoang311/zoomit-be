@@ -57,7 +57,7 @@ Resources:
             Architectures:
                 - arm64
             Events:
-                HelloWorld:
+                AuthLogin:
                     Type: Api
                     Properties:
                         Path: /auth/login
@@ -79,7 +79,7 @@ Resources:
             Architectures:
                 - arm64
             Events:
-                HelloWorld:
+                AuthSignup:
                     Type: Api
                     Properties:
                         Path: /auth/signup
@@ -101,7 +101,7 @@ Resources:
             Architectures:
                 - arm64
             Events:
-                HelloWorld:
+                AuthRefreshToken:
                     Type: Api
                     Properties:
                         Path: /auth/refresh-token
@@ -123,7 +123,7 @@ Resources:
             Architectures:
                 - arm64
             Events:
-                HelloWorld:
+                AuthNickname:
                     Type: Api
                     Properties:
                         Path: /auth/nickname
