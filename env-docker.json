@@ -3,8 +3,10 @@
         "DBUser": "postgres",
         "DBPassword": "postgres",
         "DBName": "zoomitdb",
-        "DBPort": 5432,
-        "DBHost": "http://localhost:3000",
-        "Stage": "dev"
+        "DBPort": 5435,
+        "DBHost": "host.docker.internal",
+        "Stage": "dev",
+        "JwtAccessSecret": "zoomit!@123access",
+        "JwtRefreshSecret": "zoomit!@123refresh"
     }
 }
