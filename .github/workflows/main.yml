@@ -31,7 +31,9 @@ jobs:
 
       - name: Deploy SAM application
         run: |
-          sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
+          sam deploy --no-confirm-changeset --no-fail-on-empty-changeset \
+            --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND \
+            --region ca-central-1
 
       - name: Notify of deployment success
         if: success()
