@@ -5,10 +5,12 @@ version = 0.1
 [default]
 [default.global.parameters]
 stack_name = "zoomit-be"
+region = "ca-central-1"
 
 [default.build.parameters]
 cached = false
 parallel = true
+region = "ca-central-1"
 
 [default.validate.parameters]
 lint = true
@@ -18,9 +20,11 @@ capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
 parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" DBHost=\"host.docker.internal\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
+region = "ca-central-1"
 
 [default.package.parameters]
 resolve_s3 = true
+region = "ca-central-1"
 
 [default.sync.parameters]
 watch = true
@@ -28,7 +32,10 @@ watch = true
 [default.local_start_api.parameters]
 warm_containers = "EAGER"
 parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" DBHost=\"host.docker.internal\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
+watch = true
+region = "ca-central-1"
 
 [default.local_start_lambda.parameters]
 warm_containers = "EAGER"
 parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" DBHost=\"host.docker.internal\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
+region = "ca-central-1"
