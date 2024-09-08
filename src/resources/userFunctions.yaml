@@ -137,3 +137,18 @@ Resources:
                 EntryPoints:
                     - functions/auth.ts
 Outputs:
+    AuthLoginFunctionArn:
+        Description: 'ARN of the AuthLogin Lambda function'
+        Value: !GetAtt AuthLoginFunction.Arn
+
+    AuthSignupFunctionArn:
+        Description: 'ARN of the AuthSignup Lambda function'
+        Value: !GetAtt AuthSignupFunction.Arn
+
+    AuthRefreshTokenFunctionArn:
+        Description: 'ARN of the AuthRefreshToken Lambda function'
+        Value: !GetAtt AuthRefreshTokenFunction.Arn
+
+    AuthNicknameFunctionArn:
+        Description: 'ARN of the AuthNickname Lambda function'
+        Value: !GetAtt AuthNicknameFunction.Arn
