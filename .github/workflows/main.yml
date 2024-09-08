@@ -34,7 +34,7 @@ jobs:
           sam deploy --no-confirm-changeset --no-fail-on-empty-changeset \
             --stack-name my-sam-stack \
             --capabilities CAPABILITY_IAM CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND \
-            --region us-east-1  # Specify your AWS region
+            --region ca-central-1  # Specify your AWS region
 
       - name: Notify of deployment success
         if: success()
