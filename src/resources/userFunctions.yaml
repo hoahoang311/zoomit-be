@@ -13,38 +13,37 @@ Globals:
             LogFormat: JSON
         Environment:
             Variables:
-                POSTGRES_USER: !Ref POSTGRES_USER
-                POSTGRES_PASSWORD: !Ref POSTGRES_PASSWORD
-                POSTGRES_PORT: !Ref POSTGRES_PORT
-                POSTGRES_HOST: !Ref POSTGRES_HOST
-                POSTGRES_DB: !Ref POSTGRES_DB
-                STAGE_NAME: !Ref STAGE_NAME
-                JWT_REFRESH_SECRET: !Ref JWT_REFRESH_SECRET
-                JWT_ACCESS_SECRET: !Ref JWT_ACCESS_SECRET
-
+                POSTGRES_USER: !Ref DBUser
+                POSTGRES_PASSWORD: !Ref DBPassword
+                POSTGRES_PORT: !Ref DBPort
+                POSTGRES_HOST: !Ref DBHost
+                POSTGRES_DB: !Ref DBName
+                STAGE_NAME: !Ref Stage
+                JWT_REFRESH_SECRET: !Ref JwtRefreshSecret
+                JWT_ACCESS_SECRET: !Ref JwtAccessSecret
 Parameters:
-    POSTGRES_USER:
+    DBUser:
         Type: String
         Description: DB Username
-    POSTGRES_PASSWORD:
+    DBPassword:
         Type: String
         Description: DB Password
-    POSTGRES_PORT:
+    DBPort:
         Type: String
         Description: DB Port
-    POSTGRES_HOST:
+    DBHost:
         Type: String
         Description: DB Host
-    POSTGRES_DB:
+    DBName:
         Type: String
         Description: DB Name
-    STAGE_NAME:
+    Stage:
         Type: String
         Description: Stage name
-    JWT_REFRESH_SECRET:
+    JwtRefreshSecret:
         Type: String
         Description: JWT refresh token secret
-    JWT_ACCESS_SECRET:
+    JwtAccessSecret:
         Type: String
         Description: JWT access token secret
 

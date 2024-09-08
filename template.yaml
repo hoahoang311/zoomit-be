@@ -58,27 +58,27 @@ Resources:
     Properties:
       Location: ./src/resources/userFunctions.yaml
       Parameters:
-        POSTGRES_HOST: !Ref DBHost
-        POSTGRES_PORT: !Ref DBPort
-        POSTGRES_USER: !Ref DBUser
-        POSTGRES_PASSWORD: !Ref DBPassword
-        POSTGRES_DB: !Ref DBName
-        STAGE_NAME: !Ref Stage
-        JWT_REFRESH_SECRET: !Ref JwtRefreshSecret
-        JWT_ACCESS_SECRET: !Ref JwtAccessSecret
+        DBHost: !Ref DBHost
+        DBPort: !Ref DBPort
+        DBUser: !Ref DBUser
+        DBPassword: !Ref DBPassword
+        DBName: !Ref DBName
+        Stage: !Ref Stage
+        JwtRefreshSecret: !Ref JwtRefreshSecret
+        JwtAccessSecret: !Ref JwtAccessSecret
   FunctionsS3Nested:
     Type: AWS::Serverless::Application
     Properties:
       Location: ./src/resources/s3Functions.yaml
       Parameters:
-        POSTGRES_HOST: !Ref DBHost
-        POSTGRES_PORT: !Ref DBPort
-        POSTGRES_USER: !Ref DBUser
-        POSTGRES_PASSWORD: !Ref DBPassword
-        POSTGRES_DB: !Ref DBName
-        STAGE_NAME: !Ref Stage
-        JWT_REFRESH_SECRET: !Ref JwtRefreshSecret
-        JWT_ACCESS_SECRET: !Ref JwtAccessSecret
+        DBHost: !Ref DBHost
+        DBPort: !Ref DBPort
+        DBUser: !Ref DBUser
+        DBPassword: !Ref DBPassword
+        DBName: !Ref DBName
+        Stage: !Ref Stage
+        JwtRefreshSecret: !Ref JwtRefreshSecret
+        JwtAccessSecret: !Ref JwtAccessSecret
 
   ApplicationResourceGroup:
     Type: AWS::ResourceGroups::Group
