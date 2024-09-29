@@ -19,7 +19,7 @@ lint = true
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
-parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" DBHost=\"host.docker.internal\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
+parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
 region = "ca-central-1"
 
 [default.package.parameters]
@@ -37,5 +37,4 @@ region = "ca-central-1"
 
 [default.local_start_lambda.parameters]
 warm_containers = "EAGER"
-parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" DBHost=\"host.docker.internal\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
 region = "ca-central-1"

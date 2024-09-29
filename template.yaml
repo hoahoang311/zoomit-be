@@ -34,7 +34,7 @@ Resources:
   FunctionsNested:
     Type: AWS::Serverless::Application
     Properties:
-      Location: ./src/resources/userFunctions.yaml
+      Location: ./src/resources/functions.yaml
       Parameters:
         DBHost: !Ref DBHost
         DBPort: !Ref DBPort
