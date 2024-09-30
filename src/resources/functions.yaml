@@ -144,6 +144,13 @@ Resources:
             Runtime: nodejs20.x
             Architectures:
                 - arm64
+            VpcConfig:
+                SecurityGroupIds:
+                    - sg-0bfd6a3da561f1f19
+                SubnetIds:
+                    - subnet-023ca022f0ee54c64
+            Policies:
+                - AWSLambdaVPCAccessExecutionRole 
             Events:
                 AuthLogin:
                     Type: Api
