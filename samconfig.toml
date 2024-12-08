@@ -19,7 +19,7 @@ lint = true
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
 resolve_s3 = true
-parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
+parameter_overrides = "DBUser=\"postgres\" DBPassword=\"postgres\" DBName=\"zoomitdb\" DBPort=\"5435\" DBHost=\"database-1.cf084eycyy58.us-east-1.rds.amazonaws.com\" Stage=\"dev\" JwtAccessSecret=\"zoomit!@123access\" JwtRefreshSecret=\"zoomit!@123refresh\""
 region = "ca-central-1"
 
 [default.package.parameters]
