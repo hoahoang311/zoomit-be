@@ -13,7 +13,6 @@ export const handler = async (e: APIGatewayProxyEvent) => {
         const parsed = await res.json();
 
         console.log(parsed);
-        console.log(e);
 
         return createResponse(200, { success: true, message: parsed });
     } catch (err: any) {
