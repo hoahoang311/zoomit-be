@@ -15,6 +15,9 @@ const pool = new Pool({
     user: DBUser,
     password: DBPassword,
     database: DBName,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 const db = drizzle(pool, { schema });
