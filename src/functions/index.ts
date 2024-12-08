@@ -10,11 +10,9 @@ export const handler = async (e: APIGatewayProxyEvent) => {
             },
         });
 
-        const parsed = await res.json();
+        const parsed = await res.json()
 
-        console.log(parsed);
-
-        return createResponse(200, { success: true, message: parsed });
+        return createResponse(200, { success: true, message: "hello from main service" });
     } catch (err: any) {
         return createResponse(500, { success: false, message: err.message });
     }
